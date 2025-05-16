@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import {
   StyledCheckbox,
   StyledH2,
@@ -6,13 +6,13 @@ import {
   StyledSwitchContainer
 } from './PricingSwitchStyles';
 
-const PricingSwitch = () => {
-  const [checkbox, setCheckbox] = useState(true);
+const PricingSwitch = ({anually, setAnually}) => {
 
   return (
     <StyledSwitchContainer>
       <StyledH2>Annually</StyledH2>
-      <StyledCheckbox type='checkbox' id='checkbox' />
+      <StyledCheckbox type='checkbox' id='checkbox' 
+      onChange={() => setAnually(!anually)}/>
       <StyledLabel htmlFor='checkbox' />
       <StyledH2>Monthly</StyledH2>
     </StyledSwitchContainer>

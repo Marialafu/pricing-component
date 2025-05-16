@@ -1,22 +1,20 @@
 import styled from 'styled-components';
-import { COLORS } from '../../styles/Color';
-import { FONT_SIZE } from '../../styles/FontSize';
+import { COLORS } from '../../constants/Color';
+import { FONT_SIZE } from '../../constants/FontSize';
 
 const StyledSwitchContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   padding-left: 2.75rem;
   padding-right: 2.75rem;
+  margin-bottom: 5rem;
 `;
 
 const StyledH2 = styled.h2`
   color: ${COLORS.secondary500};
   font-size: ${FONT_SIZE.s};
-`;
-
-const StyledCheckbox = styled.input`
-  display: none;
 `;
 
 const StyledLabel = styled.label`
@@ -34,6 +32,14 @@ const StyledLabel = styled.label`
     height: 1.5rem;
     border-radius: 100%;
     background-color: ${COLORS.white};
+  }
+`;
+
+const StyledCheckbox = styled.input`
+  //display: none;
+
+  &:checked + StyledLabel::before{
+    translate: 100%
   }
 `;
 
