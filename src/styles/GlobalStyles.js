@@ -28,9 +28,12 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 0;
     }
 
-    body {
+    body { 
     margin: 3.125rem;
     font-family: sans-serif;
+    background-color: #F7F7FE;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     }
 
 `;

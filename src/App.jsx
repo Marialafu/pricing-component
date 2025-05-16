@@ -1,11 +1,16 @@
-import Button from './components/button/Button';
+import PricingSwitch from './components/pricingSwitch/PricingSwitch';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Button />
+      <header>
+        <h1>Our Pricing</h1>
+      </header>
+      <main>
+        <PricingSwitch />
+      </main>
     </>
   );
 };
