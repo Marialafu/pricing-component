@@ -1,4 +1,4 @@
-import { StyledH1, StyledHeader } from "./Title"
+import { StyledH1, StyledHeader } from "./StyledTitle"
 
 const Title = () => {
     return (
@@ -6,6 +6,7 @@ const Title = () => {
         <StyledH1>Our Pricing</StyledH1>
     </StyledHeader>
 )
+
 }
 
 export default Title

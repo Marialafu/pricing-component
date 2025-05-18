@@ -2,6 +2,9 @@ import { useState } from 'react';
 import PricingSwitch from './components/pricingSwitch/PricingSwitch';
 import { GlobalStyles } from './styles/GlobalStyles';
 import Cards from './components/cards/Cards';
+import { StyledTitle } from './components/cards/CardsStyles';
+import Title from './components/title/Title';
+
 
 const App = () => {
 
@@ -11,10 +14,7 @@ const App = () => {
     <>
       <GlobalStyles />
 
-      {/* <Title />  NO ME FUNCIONA*/}
-      <header>
-        <h1>Our Pricing</h1>
-      </header>
+      <Title />
 
       <main>
         <PricingSwitch setAnually={setAnually} anually={anually} />

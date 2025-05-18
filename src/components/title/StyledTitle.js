@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledH1 = styled.h1`
-    color: ${COLORS.primary200};
+    color: ${COLORS.secondary500};
     text-align: center;
 `
 

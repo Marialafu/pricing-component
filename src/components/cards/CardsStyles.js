@@ -75,4 +75,74 @@ const StyledButton = styled.button`
     border: none;
 `
 
-export {CardsContainer, StyledSubtext, StyledText, StyledTitle, CardContainer, StyledButton}
+
+// TARJETA DISTINTA
+
+const RemarkedCardContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-image: ${COLORS.primaryGradient};
+    padding: 1.9375rem 1.8125rem;
+    border-radius: 0.625rem;
+
+    @media screen and (min-Width: 768px) {
+        scale: 110%;
+    }
+`
+
+const RemarkedTitle = styled.h2`
+    color: ${COLORS.white};
+    font-size: ${FONT_SIZE.m};
+`
+
+const RemarkedText = styled.span`
+    color: ${COLORS.white};
+    font-size: ${FONT_SIZE.xl};
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -0.75rem;
+        width: 16.8125rem;
+        height: 0.0625rem;
+        background-color: ${COLORS.white};
+    }
+`
+const RemarkedSubtext = styled.span`
+    color: ${COLORS.white};
+    font-size: ${FONT_SIZE.s};
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -0.75rem;
+        width: 16.8125rem;
+        height: 0.0625rem;
+        background-color: ${COLORS.white};
+    }
+
+`
+
+const RemarkedButton = styled.button`
+    background-image: ${COLORS.primaryGradient};
+    background-clip: text;
+    color: transparent;
+    background-color: ${COLORS.white};
+    font-family: inherit;
+    width: 16.8125rem;
+    height: 2.75rem;
+    border: none;
+`
+
+export {CardsContainer, StyledSubtext, StyledText, StyledTitle, CardContainer, StyledButton, RemarkedCardContainer, RemarkedButton, RemarkedSubtext, RemarkedTitle, RemarkedText}

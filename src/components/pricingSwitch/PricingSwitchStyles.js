@@ -24,6 +24,7 @@ const StyledLabel = styled.label`
   border-radius: 3.125rem;
   padding: 0.25rem;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -36,9 +37,9 @@ const StyledLabel = styled.label`
 `;
 
 const StyledCheckbox = styled.input`
-  //display: none;
+  display: none;
 
-  &:checked + StyledLabel::before{
+  &:checked + ${StyledLabel}::before{
     translate: 100%
   }
 `;
