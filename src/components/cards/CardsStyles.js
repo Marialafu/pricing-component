@@ -19,8 +19,8 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  background-color: ${({ title }) =>
-    title === 'Professional' ? COLORS.primaryGradient : COLORS.white};
+  background: ${({ plan }) =>
+    plan === 'Professional' ? COLORS.primaryGradient : COLORS.white};
   padding: 1.9375rem 1.8125rem;
   border-radius: 0.625rem;
 `;
